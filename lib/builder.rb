@@ -1,6 +1,7 @@
 class Student
   attr_accessor :average
   attr_accessor :on_campus
+  attr_accessor :meal_plan
   attr_accessor :hours
   attr_accessor :courses
 
@@ -56,8 +57,8 @@ class StudentBuilder
     @student = Student.new
   end
 
-  def meal_plan
-    @student.meal_plan.options = [1, 2, 3]
+  def add_meal_plan(options)
+    @student.meal_plan.plan_options = options
   end
 
   def add_history_101
