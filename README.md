@@ -5,3 +5,6 @@
 * Run `bundler`
 * Run `rspec --init`
 * Run `bundle install --binstubs`
+
+Ref:
+* https://bundler.io/v1.12
