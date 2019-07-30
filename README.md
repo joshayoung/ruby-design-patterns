@@ -3,3 +3,4 @@
 ## Steps:
 * Create a `Gemfile` with a gem inside
 * Run `bundler`
+* Run `rspec --init`
