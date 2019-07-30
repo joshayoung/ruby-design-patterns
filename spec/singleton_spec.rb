@@ -1,5 +1,3 @@
-require_relative "../../lib/singleton.rb"
-
 RSpec.describe Singleton do
   describe ".instance" do
     it "returns a single instance" do
