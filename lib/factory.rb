@@ -1,53 +1,52 @@
 class Factory
-  def output
-    raise NotImplementedError, "#{self.class} cannot be called"
+  def instance
+    raise NotImplementedError, 
+      "Cannot call '#{__method__}' on '#{self.class}'"
   end
 
   def turn
-    output.operation
-  end
-end
-
-class Rock
-  def output
-    RockTurn.new
+   instance.run
   end
 
-end
-
-class Paper
-  def output
-    PaperTurn.new
-  end
-
-end
-
-class Scissors
-  def output
-    ScissorTurn.new
-  end
-end
-
-class Turn
   def roll
-    raise NotImplementedError, "#{self.class} cannot be called"
+    return "Rock beats scissors!" if self.instance_of?(Rock)
+    return "Paper beats rock!" if self.instance_of?(Paper)
+    return "Scissors beats paper!" if self.instance_of?(Scissors)
   end
 end
 
-class RockTurn < Turn
-  def roll
-    "Rock"
+class RockProduct 
+  def run
+    'Rock'
   end
 end
 
-class PaperTurn < Turn
-  def roll
-    "Paper"
+class PaperProduct
+  def run
+    'Paper'
   end
 end
 
-class ScissorTurn < Turn
-  def roll
-    "scissors"
+class ScissorsProduct
+  def run
+    'Scissors'
+  end
+end
+
+class Rock < Factory
+  def instance
+    RockProduct.new
+  end
+end
+
+class Paper < Factory
+  def instance
+    PaperProduct.new
+  end
+end
+
+class Scissors < Factory
+  def instance
+    ScissorsProduct.new
   end
 end
