@@ -1,16 +1,16 @@
 require_relative "../lib/builder.rb"
 
-RSpec.describe StudentBuilder do
+RSpec.describe Builder do
   describe "#initialize" do
     it "returns a new instance of Student" do
-      student_builder = StudentBuilder.new
+      student_builder = Builder.new
 
       expect(student_builder.student).to be_an_instance_of(Student)
     end
   end
 
-  describe "StudentBuilder can" do
-    let(:student_builder) { StudentBuilder.new }
+  describe "Builder can" do
+    let(:student_builder) { Builder.new }
     let(:student) do
       student_builder.add_history_101
       student_builder.add_physics_1
