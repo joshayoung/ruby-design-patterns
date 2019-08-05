@@ -50,7 +50,7 @@ class Courses
   end
 end
 
-class StudentBuilder
+class Builder
   attr_accessor :student
 
   def initialize
