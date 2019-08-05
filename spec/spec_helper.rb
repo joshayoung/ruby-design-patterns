@@ -1,6 +1,7 @@
 require "pry-byebug"
 require_relative "../lib/singleton.rb"
 require_relative "../lib/builder.rb"
+require_relative "../lib/factory.rb"
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
