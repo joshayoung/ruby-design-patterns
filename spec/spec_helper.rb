@@ -4,6 +4,7 @@ require_relative "../lib/builder.rb"
 require_relative "../lib/factory.rb"
 require_relative "../lib/decorator.rb"
 require_relative "../lib/adapter.rb"
+require_relative "../lib/strategy.rb"
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
