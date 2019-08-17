@@ -2,7 +2,7 @@ require "pry-byebug"
 require_relative "../lib/singleton.rb"
 require_relative "../lib/builder.rb"
 require_relative "../lib/factory.rb"
-require_relative "../lib/decorator.rb"
+require_relative "../lib/decorators/decorator.rb"
 require_relative "../lib/adapter.rb"
 require_relative "../lib/strategy.rb"
 
