@@ -5,7 +5,6 @@ require "factory"
 require "decorators/decorator"
 require "decorators/decorator2"
 require "adapter"
-require "strategy"
 require "presenter"
 
 RSpec.configure do |config|
