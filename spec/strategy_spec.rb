@@ -1,4 +1,4 @@
-require_relative "../../lib/strategy/strategy"
+require_relative "../lib/strategy"
 
 RSpec.describe Strategy::Strategy do
   describe "Strategy Pattern" do

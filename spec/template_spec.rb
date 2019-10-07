@@ -1,4 +1,4 @@
-require_relative "../lib/template/template.rb"
+require_relative "../lib/template.rb"
 
 RSpec.describe Template::Template do
   describe "TennisShoe" do
