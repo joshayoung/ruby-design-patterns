@@ -1,4 +1,4 @@
-require_relative "../../lib/strategy/strategy2"
+require_relative "../lib/strategy2"
 
 RSpec.describe Strategy2 do
   describe "BuildShoe" do
