@@ -6,6 +6,8 @@ require "decorator"
 require "decorator2"
 require "adapter"
 require "presenter"
+require "strategy"
+require "strategy2"
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|

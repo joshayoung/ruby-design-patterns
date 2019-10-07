@@ -1,5 +1,3 @@
-require_relative "../lib/strategy"
-
 RSpec.describe Strategy::Strategy do
   describe "Strategy Pattern" do
     it "uses strategy passed in to derive the result" do

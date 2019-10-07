@@ -1,5 +1,3 @@
-require_relative "../lib/builder.rb"
-
 RSpec.describe Builder do
   describe "#initialize" do
     it "returns a new instance of Student" do
