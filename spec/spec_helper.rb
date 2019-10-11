@@ -1,13 +1,13 @@
 require "pry-byebug"
-require "singleton"
-require "builder"
-require "factory"
-require "decorator"
-require "decorator2"
-require "adapter"
-require "presenter"
-require "strategy"
+require_relative "../lib/custom/singleton"
+require_relative "../lib/custom/builder"
+require_relative "../lib/custom/factory"
+require_relative "../lib/custom/decorator"
+require_relative "../lib/custom/adapter"
+require_relative "../lib/custom/presenter"
+require_relative "../lib/custom/strategy"
 require "strategy2"
+require "decorator2"
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|

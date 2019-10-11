@@ -1,3 +1,4 @@
+module Custom
 RSpec.describe Builder do
   describe "#initialize" do
     it "returns a new instance of Student" do
@@ -31,3 +32,4 @@ RSpec.describe Builder do
     end
   end
 end
+  end

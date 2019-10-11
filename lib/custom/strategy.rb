@@ -1,7 +1,7 @@
-module Strategy
+module Custom
   class Strategy
     def calculate(_data)
-      raise NotImplementedError, 
+      raise NotImplementedError,
         "Cannot call '#{__method__}' on '#{self.class}'"
     end
   end
