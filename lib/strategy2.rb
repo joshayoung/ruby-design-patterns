@@ -1,10 +1,4 @@
-class Food
-  def initialize
-    puts "test"
-
-  end
-end
-module Strategy2
+module Strategy
   class TennisShoe
     def build(obj)
       "A tennis shoe with #{obj.color} laces"

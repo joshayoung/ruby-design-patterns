@@ -1,7 +1,5 @@
 # The template pattern at it's core uses Inheritance
 module Template
-  class Template; end
-
   class Shoe
     def type
       raise "Called abstract method: 'type'"
