@@ -6,8 +6,8 @@ require_relative "../lib/custom/decorator"
 require_relative "../lib/custom/adapter"
 require_relative "../lib/custom/presenter"
 require_relative "../lib/custom/strategy"
-require "strategy2"
-require "decorator2"
+require "strategy"
+require "decorator"
 require "template"
 
 RSpec.configure do |config|
