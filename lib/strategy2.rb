@@ -1,3 +1,9 @@
+class Food
+  def initialize
+    puts "test"
+
+  end
+end
 module Strategy2
   class TennisShoe
     def build(obj)
