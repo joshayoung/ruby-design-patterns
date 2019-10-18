@@ -1,3 +1,28 @@
+module StrategyWithLambda
+  TENNIS_SHOE_FORMATTER = lambda do |shoe|
+    "A tennis shoe with #{shoe.color} laces"
+  end
+
+  WORK_BOOT_FORMATTER = lambda do |boot|
+    "A work boot with #{boot.color} laces"
+  end
+
+  class BuildShoe
+    attr_accessor :color
+    attr_accessor :shoe
+
+    def initialize(formatter)
+      @color = "black"
+      @shoe = shoe
+      @formatter = formatter
+    end
+
+    def display
+      @formatter.call(self)
+    end
+  end
+end
+
 module Strategy
   class TennisShoe
     def build(obj)
