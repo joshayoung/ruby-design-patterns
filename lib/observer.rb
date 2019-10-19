@@ -1,5 +1,8 @@
 module Observer
   class Lever
+    attr_accessor :name
+    attr_reader :power
+
     def initialize(name, power, power_level)
       @name = name
       @power = power
@@ -13,11 +16,8 @@ module Observer
   end
 
   class PowerLevel
-    def initialize
-
-    end
     def increase_strength(level)
-      "The #{level.name} was updated to #{level.power_level}"
+      "The #{level.name} was updated to #{level.power}"
     end
   end
 end

@@ -9,6 +9,7 @@ require_relative "../lib/custom/strategy"
 require "strategy"
 require "decorator"
 require "template"
+require "observer"
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
